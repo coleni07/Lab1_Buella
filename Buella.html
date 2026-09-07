@@ -4,43 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Marginalia — essays on noticing things</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@0;1&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="wrap">
 
-    <main>
-        <section id="home">
-            <h2>Welcome</h2>
-            <p>This is the initial version of my webpage. More content will be added soon.</p>
+        <header class="masthead">
+            <div class="masthead-row">
+                <a href="#" class="site-name">Cleino</a>
+                <nav>
+                    <ul>
+                        <li><a href="#essays">Essays</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#archive">Archive</a></li>
+                    </ul>
+                </nav>
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="toggle-dot"></span>
+                </button>
+            </div>
+        </header>
+
+        <section class="featured" id="essays">
+            <p class="kicker">Latest essay</p>
+            <h1>What the middle of a thought looks like</h1>
+            <p class="meta"><span>March 3, 2026</span><span class="dot">·</span><span id="read-time">6 min read</span>
+            </p>
+            <p class="excerpt">Most writing advice is about beginnings and endings. Almost none of it is about the
+                unglamorous middle — the part where an idea is still deciding what it is. This essay is an attempt to
+                sit in that discomfort a little longer than usual, and to argue that it's where the real thinking
+                happens.</p>
+            <a href="#" class="read-link">Continue reading</a>
         </section>
 
-        <section id="about">
+        <section class="posts" aria-label="Recent posts">
+            <article class="post">
+                <h2><a href="#">On keeping a commonplace book</a></h2>
+                <p class="meta"><span>February 21, 2026</span><span class="dot">·</span><span>4 min read</span></p>
+                <p>A case for copying down sentences you didn't write, and why the habit changes how you read everything
+                    else.</p>
+            </article>
+
+            <article class="post">
+                <h2><a href="#">The room where decisions get made</a></h2>
+                <p class="meta"><span>February 9, 2026</span><span class="dot">·</span><span>7 min read</span></p>
+                <p>Most choices aren't made at the moment they're announced. They're made earlier, somewhere quieter,
+                    and this is an attempt to find that room.</p>
+            </article>
+
+            <article class="post">
+                <h2><a href="#">Notes on being wrong in public</a></h2>
+                <p class="meta"><span>January 30, 2026</span><span class="dot">·</span><span>5 min read</span></p>
+                <p>What changes when you write down a belief before you're sure of it, and someone else gets to watch
+                    you revise it.</p>
+            </article>
+        </section>
+
+        <section class="about" id="about">
             <h2>About</h2>
-            <p>A short description about this site or project goes here.</p>
+            <p>Marginalia is written by someone who reads too many footnotes and takes too many notes in the margins of
+                other people's books. It's a small, slow publication about attention, writing, and the ordinary work of
+                thinking clearly.</p>
+            <p>New essays go up roughly every two weeks. No spam, no scheduling gimmicks — just when there's something
+                worth saying.</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: youremail@example.com</p>
-        </section>
-    </main>
+        <footer id="archive">
+            <div class="footer-row">
+                <span>&copy; <span id="year"></span> Marginalia</span>
+                <div class="footer-links">
+                    <a href="#">RSS</a>
+                    <a href="#">Archive</a>
+                    <a href="mailto:hello@marginalia.example">hello@marginalia.example</a>
+                </div>
+            </div>
+        </footer>
 
-    <footer>
-        <p>&copy; 2026 My Website. All rights reserved.</p>
-    </footer>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
